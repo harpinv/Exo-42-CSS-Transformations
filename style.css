@@ -1,0 +1,97 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.pape {
+    margin: 80px;
+    height: 300px;
+    width: 300px;
+    background-color: gold;
+    border: 2px solid green;
+    transform-origin: center center;
+    transform: rotate(-35deg);
+}
+
+p {
+    margin: 200px;
+    transform-origin: center center;
+    transform: rotate(90deg);
+}
+
+.fuite {
+    margin-left: 100px;
+    height: 200px;
+    width: 200px;
+    border: 2px solid black;
+    transform: translate(-35px, -35px);
+}
+
+.fuite2 {
+    margin-left: 100px;
+    height: 200px;
+    width: 200px;
+    border: 2px solid burlywood;
+    position: relative;
+    bottom: 200px;
+    z-index: 1;
+}
+
+.pique {
+    margin-left: 100px;
+    height: 300px;
+    width: 300px;
+    background-color: red;
+    border: 2px solid black;
+    transform: scale(1.5, 1.5);
+}
+
+.pique2 {
+    margin-left: 100px;
+    height: 300px;
+    width: 300px;
+    background-color: green;
+    border: 2px solid burlywood;
+    position: relative;
+    bottom: 300px;
+    z-index: 1;
+}
+
+.fin {
+    margin-left: 170px;
+    height: 300px;
+    width: 300px;
+    background-color: cornflowerblue;
+    border: 2px solid black;
+    transform: skewX(25deg) skewY(50deg);
+}
+
+@media screen and (max-width: 350px) {
+    .pape, .pique, .pique2 {
+        height: 200px;
+        width: 200px;
+    }
+
+    .pique, .pique2 {
+        margin-left: 50px;
+    }
+
+    .pique2 {
+        bottom: 200px;
+    }
+
+    .fin {
+        height: 100px;
+        width: 100px;
+    }
+
+    p {
+        font-size: 10px;
+        margin: 0px;
+    }
+}
